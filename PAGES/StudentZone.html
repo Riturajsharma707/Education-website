@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentZone</title>
+    <style>
+        body {
+            background-color: rgba(43, 4, 4, 0.993);
+        }
+
+        .container {
+            width: 65%;
+            margin: auto;
+            background-color: dodgerblue;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(43, 4, 4, 0.993);
+        }
+
+        .heading {
+            width: 60%;
+            margin: 0 auto;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .box {
+            background-color: rgb(185, 183, 183);
+            background-image: url(../Image/back1.jpg);
+            width: 200px;
+            height: 250px;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 16px;
+            box-shadow: aqua -7px -3px 4px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .box a {
+            text-decoration: none;
+            background-color: rgb(96, 241, 96);
+            border-radius: 16px;
+            padding: 15px 20px 10px 20px;
+            color: blue;
+        }
+
+        .box a:hover {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(10, 119, 10);
+            border-radius: 16px;
+            border: 1px solid pink;
+            padding: 15px 20px 10px 20px;
+            box-shadow: rgb(175, 11, 134) 2px 8px 15px;
+        }
+
+        /* .box1 {
+            background-color: orange;
+        }
+
+        .box2 {
+            background-color: blue;
+        }
+
+        .box3 {
+            background-color: dodgerblue;
+        }
+
+        .box4 {
+            background-color: red;
+        } */
+
+        /* On screens that are 460px or less, set the background color to blue */
+        @media screen and (max-width: 460px) {
+            body {
+                background-color: rgba(43, 4, 4, 0.993);
+            }
+
+            .heading {
+
+                width: 60%;
+                margin: 0 auto;
+                color: white;
+                font-size: 2rem;
+            }
+
+            .container {
+                width: 90%;
+                margin: auto;
+                background-color: rgba(43, 4, 4, 0.993);
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box{
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <p>Welcome My Dear Student in your Zone </p>
+    </div>
+    <div class="container">
+        <div class="box box1">
+            <h1>For 11th</h1>
+            <h2>Click Take Test for Test</h2>
+            <a href="../Test/11th/LoginForTest11.html"><strong>Take Test</strong></a>
+        </div>
+        <div class="box box3">
+            <h1>For 12th</h1>
+            <h2>Click Take Test for Test</h2>
+            <a href="../Test/11th/LoginForTest12.html"><strong>Take Test</strong></a>
+        </div>
+        <div class="box box2">
+            <h1> For 11th notes</h1>
+            <h2>Click Download link for download notes : </h2>
+            <a href="../Notes/11th/LoginForNotes11.php">DOWNLOAD</a>
+        </div>
+        <div class="box box4">
+            <h1>For 12th notes</h1>
+            <h2>Click Download link for download notes : </h2>
+            <a href="../Notes/11th/LoginForNotes12.php">DOWNLOAD</a>
+        </div><br>
+    </div>
+    <footer style="color: red; text-align: center; justify-content: center;">
+        power by avaran
+    </footer>
+</body>
+
+</html>

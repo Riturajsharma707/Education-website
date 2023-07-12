@@ -1,0 +1,80 @@
+body{
+	background-image: url(../Image/nature.jpeg);
+}
+.container{
+	
+	z-index: -1;
+}
+.FormDiv {
+	left: 425px;
+	justify-items: center;
+	align-items: center;
+	background-image: url(../Image/nature1.jpeg);
+	color: white;
+	width: 80%;
+	margin: 30px auto;
+	left: 0px;
+	z-index: -1;
+	align-items: center;
+}
+.FormDiv input {
+	width: 450px;
+	margin-left: 250px;
+}
+.FormDiv label {
+	width: 200px;
+	margin-left:  250px;
+}
+textarea{
+	width: 450px;
+	margin-left:  250px;
+}
+.SubmitBtn{
+	width: 150px;
+	height: 35px;
+	font-size: large;
+	border: 1px solid black;
+	border-radius: 8px;
+	margin-left: 40%;
+	background-color: rgb(83, 201, 72);
+}
+
+.col-4{
+	width: 700px;
+}
+
+@media only screen and (max-width: 600px){
+	.FormDiv {
+		left: 425px;
+		justify-items: center;
+		align-items: center;
+		background-color: rebeccapurple;
+		width: 80%;
+		margin: 0px auto;
+		left: 0px;
+		z-index: -1;
+	}
+	.FormDiv input {
+		width: auto;
+		margin-left: 0px;
+	}
+	.FormDiv label {
+		width: 200px;
+		margin-left:  0px;
+	}
+	textarea{
+		width: auto;
+		margin-left:  0px;
+	}
+	.SubmitBtn{
+		width: 150px;
+		height: 35px;
+		font-size: large;
+		border: 1px solid black;
+		border-radius: 8px;
+		margin-left: 28%;
+		background-color: rgb(83, 201, 72);
+	}
+
+}
+

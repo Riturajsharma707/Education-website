@@ -1,0 +1,80 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 70%;
+	margin: 0 auto;
+	background-color:rgba(28, 37, 92, 0.637);
+}
+.header {
+	justify-content: center;
+	display: flex;
+}
+.container{
+	padding: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+h2{
+	margin-top: 100px;
+}
+.left-side{
+	background-color: rgb(201, 201, 253);
+	width:400px;
+	height: 400px;
+	text-align: center;
+	border-left: 2px solid gray;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	float: left;
+}
+.right-side{
+	float: left;
+	background-color: rgb(201, 201, 253);
+	width:400px;
+	height: 400px;
+	justify-content: center;
+	text-align: center;
+	border-right: 2px solid gray;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	border-top-right-radius:10px;
+	border-bottom-right-radius: 10px;
+}
+.left-side button{
+	width: 200px;
+	height: 50px;
+	border:2px solid gray;
+	border-radius: 10px;
+	background-color: lightgreen;
+	margin: 50px 15px 25px ;
+	font-size: 14px;
+
+}
+.right-side button{
+	width: 200px;
+	height: 50px;
+	border:2px solid gray;
+	border-radius: 10px;
+	background-color: lightgreen;
+	margin: 87px 15px 25px ;
+	font-size: 14px;
+}
+button:hover {
+	background-color: green;
+	color: white;
+}
+button:hover a{
+	background-color: green;
+	color: white;
+}
+button a{
+	text-decoration: none;
+	font-size: 30px;
+	font-style:italic;
+}

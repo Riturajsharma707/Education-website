@@ -1,0 +1,209 @@
+body{
+	margin:0px;
+	padding: 0px;
+	background:url("./back1.jpg");
+	background-repeat:no-repeat; 
+	background-size: cover;
+	/*background-position: center;*/
+}
+.container{
+	padding: 15px;
+	height: 70%;
+	width: 40%;
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+.img {
+	height: 100px;
+	width: 100px;
+	background: url("./vivekPicture.jpg")no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+center h2{
+	margin-top: 40px;
+	color: white;
+}
+center p {
+	color: white;
+}
+.btn{
+	/* background-color: lightgreen;
+	left: 20%
+	position: absolute;
+	top: 90%;	
+	border-radius5px;
+	border:1px solid black; */
+}
+.btn:hover{
+	background-color: green;
+	color: black;
+}
+@media (min-width: 1281px) {
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+	body{
+		margin:0px;
+		padding: 0px;
+		background:url("./back1.jpg");
+		background-repeat:no-repeat; 
+		/*background-size: cover;*/
+		/*background-position: center;*/
+	}
+	.container{
+		padding: 15px;
+		height: 65%;
+		width: 55%;
+		background-color: rgba(0,0,0,.6);
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: -1;
+
+	}
+}
+/* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+	body{
+		margin:0px;
+		padding: 0px;
+		background:url("./back1.jpg");
+		background-repeat:no-repeat; 
+		/*background-size: cover;*/
+		/*background-position: center;*/
+	}
+	.container{
+		padding: 15px;
+		height: 70%;
+		width: 55%;
+		background-color: rgba(0,0,0,.6);
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: -1;
+
+	}
+}
+/* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	body{
+		margin:0px;
+		padding: 0px;
+		background:url("./back1.jpg");
+		background-repeat:no-repeat; 
+		/*background-size: cover;*/
+		/*background-position: center;*/
+	}
+	.container{
+		padding: 15px;
+		height: 70%;
+		width: 55%;
+		background-color: rgba(0,0,0,.6);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: -1;
+
+	}
+}
+/* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+	body {
+		margin:0px;
+		padding: 0px;
+		background:url("./back1.jpg");
+		background-repeat:no-repeat; 
+	}
+	.container{
+		padding: 15px;
+		height: 80%;
+		width: 100%;
+		background-color: rgba(0,0,0,.6);
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: -1;
+
+	}
+	h2 {
+		color: white;
+	}	
+}	
+/* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px)
+{
+	body {
+		margin:0px;
+		padding: 0px;
+		background:url("./back1.jpg");
+		background-repeat:no-repeat; 
+	}
+	.container{
+		padding: 15px;
+		height: 80%;
+		width: 100%;
+		background-color: rgba(0,0,0,.6);
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: -1;
+
+	}
+	h2 {
+		color: white;
+	}
+}
+/* 
+  Device = Most of the small Mobiles (Portrait)
+  Screen = B/w 50px to 320px
+*/
+@media (min-width: 50px) and (max-width: 320px)
+{
+	body {
+		margin:0px;
+		padding: 0px;
+		background:url("./back1.jpg");
+		background-repeat:no-repeat; 
+	}
+	.container{
+		margin-top: 60px;
+		padding: 15px;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,.6);
+		position: absolute;
+		top: 70%;
+		transform: translate(-50%,-50%);
+		z-index: -1;
+
+	}
+	h2 {
+		color: white;
+	}
+}

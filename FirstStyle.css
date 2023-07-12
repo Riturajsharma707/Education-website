@@ -1,0 +1,158 @@
+nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+}
+label.institudename{
+    color: orange;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform:uppercase;
+}
+ul li a:hover{
+    background: orange;
+    transition: .4s;
+}
+
+/* 
+.checkButton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /* display: none; 
+} */
+/* #check{
+    display: none;
+} */
+
+.berger{
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 30%;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 7px;
+    margin: 4px 5px;
+    /* padding: 3px; */
+}
+/* using mediaquery */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(34, 10, 3);
+      color:black;
+    }
+    #Priceing {
+        color: black;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+  /* Device = Most of the Smartphones Mobiles (Portrait)
+    Screen = B/w 320px to 479px 
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .TopBar{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .h {
+        height: ;
+    }
+}
+/* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .TopBar{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+}
+/* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1150px) and (orientation: landscape) {
+  
+    .TopBar{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        justify-content: center;
+        
+    }   
+    label.institudename{
+        color: orange;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+    nav ul{
+        float: left;
+        margin-right: 20px;
+        justify-content: center;
+        justify-items: center;
+    }
+    nav ul li {
+        display:inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }   
+    .berger{
+        display: block;
+    }
+
+  }
+
+  
+  /* 
+  Device = Ipads
+  Screen = B/w 768px to 1024px
+*/
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  
+    .TopBar{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        justify-content: center;
+        
+    }    
+  }

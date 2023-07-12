@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: left;
+}
+.logo img{
+    margin-left: 15px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid red;
+    border-radius: 40px;
+}
+.logo h2{
+    color: rgb(255, 174, 0);
+    margin-left: 20px;
+    /* font-size: 1rem; */
+}
+.InstituteName {
+    font-size: 45px;
+    font-family: 'Ranchers', cursive;
+}
+.nav-bar {
+    display: flex;
+    /* position: fixed; */
+    /* position: absolute; */
+    height: 70px;
+}
+.leftNav {
+    width: 30%;
+    /* background-color: black; */
+}
+.rightNav {
+    margin-left: 10px;
+    width: 70%;
+    /* background-color: brown; */
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+}
+.nav-list li {
+    width: 115px;
+    height: 50px;
+    border: 1px solid gray;
+    list-style: none;
+    padding: 8px 4px;
+    margin-left: 30px;
+    /* margin-top: 19px; */
+    margin-bottom: 21px;
+    border-radius: 7px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li:hover {
+    text-decoration: none;
+    color: white;
+    background-color: darkorange;
+
+}
+.background {
+    background-color: #343a40!important;
+}
+
+/* drop-down button css */
+
+.dropbtn {
+    position: top;
+    background-color: #343a40;
+    color:white;
+    width: 115px;
+    height: 50px;
+    border: 1px solid gray;
+    list-style: none;
+    padding: 8px 4px;
+    margin-left: 30px;
+    /* margin-top: 19px; */
+    /* margin-bottom: 21px; */
+    border-radius: 7px;
+}
+.dropbtn:hover {
+    background-color:orange;
+}
+.dropdown {
+    display:grid;
+    position: relative;
+}
+
+.dropdown-content {
+    border-radius: 6px;
+    position:absolute;
+    background-color: lightgrey;
+    min-width: 80px;
+    margin-left:30px;
+    margin-top: 52px;
+    display: none;
+    z-index: 999;
+}
+
+.dropdown-content a {
+    width: 200px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: orange;
+    border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: orange;
+}
+
+.burger {
+    display:none;
+    position:absolute;
+    cursor: pointer;
+    right: 10px;
+    top:140px;
+}
+.line {
+    width: 33px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 13px;
+}
+
+
+/* using mediaquery */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .nav-bar{
+        visibility: hidden;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .logo img{
+        margin-top: 15px;
+        margin-left: 15px;
+        width: 60px;
+        height: 60px;
+        border: 2px solid red;
+        border-radius: 40px;
+    }
+    .logo h2{
+        color: rgb(255, 174, 0);
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 1.7rem;
+    }
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .leftNav {
+        width: 80%;
+        /* background-color: black; */
+    }
+    .rightNav {
+        transition: all 0.7s ease-out;
+        width: 70%;
+        height: 30%;
+        /* background-color: brown; */
+        display: flex;
+        text-align:left;
+        flex-direction: column;
+    }
+    .nav-list li {
+        width: 135%;
+        height: 35px;
+        border: 0px solid gray;
+        list-style: none;
+        /* padding: 6px 8px; */
+        /* margin-left: 15px; */
+        margin-top: 15px;
+        margin-bottom: 16px;
+        border-radius: 4px;
+    }
+
+    .dropbtn {
+        background-color: #343a40;
+        color:white;
+        width: 128%;
+        height: 48px;
+        text-align:left;
+        border: 0px solid gray;
+        list-style: none;
+        padding: 8px 4px;
+        margin-left: 30px;
+        margin-top: 19px;
+        /* margin-bottom: 21px; */
+        border-radius: 7px;
+     }
+    .dropdown-content {
+        border-radius: 6px;
+        position: absolute;
+        background-color: lightgrey;
+        margin-left:155px;
+        min-width: 72%;
+        display: none;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        width: 98%;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .burger {
+        display:block;
+    }
+    .height-nav-resp {
+        height: 22px;
+    }
+    .visibility-class-resp {
+        opacity: 0;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait)
+    Screen = B/w 320px to 479px 
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    
+}
+/* 
+Device = Low Resolution Tablets, Mobiles (Landscape)
+Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+/* 
+Device = Tablets, Ipads (landscape)
+Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        
+}
+/* 
+Device = Ipads
+Screen = B/w 768px to 1024px
+*/
+@media (min-width: 760px) and (max-width: 1024px){
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .logo img{
+        margin-left: -42px;
+        width: 60px;
+        height: 60px;
+        border: 2px solid red;
+        border-radius: 40px;
+    }
+    .logo h2{
+        color: rgb(255, 174, 0);
+        margin-left: 15px;
+        font-size: 1.8rem;
+    }
+    .navbar {
+        display: flex;
+    }
+    .leftNav {
+        width: 40%;
+        background-color: black;
+    }
+    .rightNav {
+        width: 70%;
+        background-color: brown;
+        display: flex;
+        text-align: center;
+    }
+    .nav-list li {
+        width: 72px;
+        height: 25px;
+        border: 1px solid gray;
+        list-style: none;
+        padding: 6px 8px;
+        margin-left: 5px;
+        margin-top: 12px;
+        margin-bottom: 16px;
+        border-radius: 10px;
+    } 
+}
